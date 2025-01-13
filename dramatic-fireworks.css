@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	background: radial-gradient(circle, #020111, #000000);
+	overflow: hidden;
+	height: 100vh;
+	cursor: pointer;
+	font-family: "Arial", sans-serif;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* Add large instruction text */
+.instructions {
+	font-size: 2rem;
+	font-weight: bold;
+	z-index: 10;
+	color: #ebe8e7;
+	text-shadow: 1px -1px 7px rgb(142 142 142 / 80%);
+}
+.bottom-button {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	padding: 10px 20px;
+	background-color: #ff9671;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s, background-color 0.3s;
+}
+
+.bottom-button:hover {
+	transform: scale(1.1);
+	background-color: #ff7361;
+}
+.text{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projectile {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+		0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.particule {
+	position: absolute;
+	font-size: 2rem;
+	font-family: "Cursive", serif;
+	font-weight: bold;
+	color: white;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.sparkle {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: white;
+	transform: scale(0);
+	opacity: 0;
+}
